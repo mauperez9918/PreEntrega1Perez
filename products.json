@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "nombre": "CANGURO LOGO PUMA",
+    "descripcion": "MARCA: PUMA, GÉNERO: HOMBRE",
+    "precio": "3190",
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1691175261/SportEssentials/canguro-logo-negro-blanco_cum4za.webp",
+    "categoria": "Buzos",
+    "stock": "11"
+  },
+  {
+    "id": 2,
+    "nombre": "CANGURO RIVAL FLECCE UNDER ARMOUR - VERDE/BLANCO",
+    "descripcion": "MARCA: UNDER ARMOUR, GÉNERO: HOMBRE",
+    "precio": "3590",
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1691175261/SportEssentials/canguro-rival-flecce-verde-blanco_qr2owm.webp",
+    "categoria": "Buzos",
+    "stock": "7"
+  },
+  {
+    "id": 3,
+    "nombre": "CANGURO M BL FT ADIDAS",
+    "descripcion": "MARCA: ADIDAS, GÉNERO: HOMBRE",
+    "precio": "3990",
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1691175261/SportEssentials/canguro-m-bl-ft-negro-blanco_h1eid6.webp",
+    "categoria": "Buzos",
+    "stock": "4"
+  },
+  {
+    "id": 4,
+    "nombre": "CANGURO LOGO POWER PUMA - GRIS",
+    "descripcion": "MARCA: PUMA, GÉNERO: HOMBRE",
+    "precio": "3290",
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1691175262/SportEssentials/canguro-logo-power-gris_f02hwk.webp",
+    "categoria": "Buzos",
+    "stock": "7"
+  },
+  {
+    "id": 5,
+    "nombre": "GORRA C/BORDADO T TIFFOSI",
+    "descripcion": "MARCA: TIFFOSI, GÉNERO: HOMBRE, MUJER",
+    "precio": "1190",
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1691175261/SportEssentials/gorra-c-bordado-t-negro-blanco_nadnre.webp",
+    "categoria": "Gorras",
+    "stock": "15"
+  },
+  {
+    "id": 6,
+    "nombre": "GORRO RIBBED CLASSIC PUMA - NEGRO",
+    "descripcion": "MARCA: PUMA, GÉNERO: HOMBRE",
+    "precio": "990",
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1691175261/SportEssentials/gorro-ribbed-classic-negro_ooxnjy.webp",
+    "categoria": "Gorras",
+    "stock": "19"
+  },
+  {
+    "id": 7,
+    "nombre": "GORRA TRUCKER PUMA - ROSA/BLANCO",
+    "descripcion": "MARCA: PUMA, GÉNERO: HOMBRE",
+    "precio": "990",
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1691175261/SportEssentials/gorra-trucker-rosa-blanco_jjv6rr.webp",
+    "categoria": "Gorras",
+    "stock": "15"
+  },
+  {
+    "id": 8,
+    "nombre": "GORRO LOGO BUCKET CONVERSE - ALL STAR - NEGRO",
+    "descripcion": "MARCA: CONVERSE - ALL STAR, GÉNERO: HOMBRE",
+    "precio": "2590",
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1691175261/SportEssentials/gorro-logo-bucket-negro_w07nvh.webp",
+    "categoria": "Gorras",
+    "stock": "6"
+  },
+  {
+    "id": 9,
+    "nombre": "CAMPERA TRAPPER UMBRO - GRIS/MELANGE/NEGRO",
+    "descripcion": "MARCA UMBRO, GÉNERO HOMBRE",
+    "precio": "2170",
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1691175261/SportEssentials/gorro-logo-bucket-negro_w07nvh.webp",
+    "categoria": "Camperas",
+    "stock": "2"
+  },
+  {
+    "id": 10,
+    "nombre": "CAMPERA MEN III TOPPER - NEGRO",
+    "descripcion": "MARCA TOPPER, GÉNERO HOMBRE",
+    "precio": "3390",
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1691175262/SportEssentials/campera-men-iii-negro_w9mvc1.webp",
+    "categoria": "Camperas",
+    "stock": "4"
+  },
+  {
+    "id": 11,
+    "nombre": "CAMPERA C/CAPUCHA ADULTO UMBRO - NEGRO/BLANCO",
+    "descripcion": "MARCA: UMBRO, GÉNERO: HOMBRE",
+    "precio": "2890",
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1691175260/SportEssentials/campera-c-capucha-adulto-negro-blanco_a5okkk.webp",
+    "categoria": "Camperas",
+    "stock": "8"
+  },
+  {
+    "id": 12,
+    "nombre": "PANTALON NACIONAL TECNOLOGICO UMBRO - MARINO/BLANCO/ROJO",
+    "descripcion": "MARCA UMBRO, GÉNERO HOMBRE",
+    "precio": "3290",
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1691175260/SportEssentials/pantalon-nacional-tecnologico-marino-blanco-rojo_syvdtp.webp",
+    "categoria": "Pantalones",
+    "stock": "17"
+  },
+  {
+    "id": 13,
+    "nombre": "PANTALON TUCK KRISTOBELGA - GRIS",
+    "descripcion": "MARCA KRISTOBELGAR, GÉNERO HOMBRE",
+    "precio": "1890",
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1691175260/SportEssentials/pantalon-tuck-gris_gueyx2.webp",
+    "categoria": "Pantalones",
+    "stock": "12"
+  },
+  {
+    "id": 14,
+    "nombre": "PANTALON CORTE UMBRO - AZUL/MARINO",
+    "descripcion": "MARCA: UMBRO, GÉNERO: HOMBRE",
+    "precio": "2490",
+    "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1691175260/SportEssentials/pantalon-corte-azul-marino_tcunlm.webp",
+    "categoria": "Pantalones",
+    "stock": "12"
+  }
+]
