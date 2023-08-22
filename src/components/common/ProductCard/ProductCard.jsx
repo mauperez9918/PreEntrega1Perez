@@ -20,9 +20,9 @@ const ProductCard = ({ product }) => {
             <CardActionArea>
               <CardMedia
                 component="img"
-                height="300"
+                height="300px"
                 image={product.imagen}
-                alt="Product Image"
+                alt="Imagen del producto"
               />
               <CardContent>
                 <Typography

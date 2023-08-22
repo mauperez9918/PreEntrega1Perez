@@ -35,7 +35,9 @@ const Navbar = () => {
               component="div"
               sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
             >
-              Sports Essentials
+              <Link style={{ textDecoration: "none", color: "white" }} to="/">
+                Sports Essentials
+              </Link>
             </Typography>
             <Box sx={{ flexGrow: 0 }}>
               <Link to="/">
