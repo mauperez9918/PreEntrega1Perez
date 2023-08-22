@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "nombre": "CANGURO LOGO PUMA",
-    "descripcion": "MARCA: PUMA, GÉNERO: HOMBRE",
+    "nombre": "Buzo Puma",
+    "descripcion": "Marca: Puma, Género: Hombre",
     "precio": "3190",
     "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1691175261/SportEssentials/canguro-logo-negro-blanco_cum4za.webp",
     "categoria": "Buzos",
@@ -10,8 +10,8 @@
   },
   {
     "id": 2,
-    "nombre": "CANGURO RIVAL FLECCE UNDER ARMOUR - VERDE/BLANCO",
-    "descripcion": "MARCA: UNDER ARMOUR, GÉNERO: HOMBRE",
+    "nombre": "Buzo Rival Flecce Under Armour - Verde/Banco",
+    "descripcion": "Marca: Under Armour, Género: Hombre",
     "precio": "3590",
     "imagen": "https://res.cloudinary.com/dwpppqzr4/image/upload/v1691175261/SportEssentials/canguro-rival-flecce-verde-blanco_qr2owm.webp",
     "categoria": "Buzos",
