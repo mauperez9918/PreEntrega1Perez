@@ -9,7 +9,7 @@ const ItemDetailContainer = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch("https://mauperez9918.github.io/PreEntrega1Perez/products.json")
+    fetch("https://mauperez9918.github.io/PreEntrega2Perez/products.json")
       .then((res) => res.json())
       .then((products) => {
         let filterProduct = products.filter((product) => product.id == id);

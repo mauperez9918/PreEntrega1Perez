@@ -9,7 +9,7 @@ const ItemListContainer = () => {
   let filterByCategory = "";
 
   useEffect(() => {
-    fetch("https://mauperez9918.github.io/PreEntrega1Perez/products.json")
+    fetch("https://mauperez9918.github.io/PreEntrega2Perez/products.json")
       .then((res) => res.json())
       .then((products) => {
         filterByCategory = products.filter(

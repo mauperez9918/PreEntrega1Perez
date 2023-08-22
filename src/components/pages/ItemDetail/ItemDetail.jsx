@@ -51,10 +51,10 @@ const ItemDetail = ({ product }) => {
           </Box>
           <Box sx={{ display: "flex", flexDirection: "column" }}>
             <Typography>
-              <span>MARCA: Umbro</span>
+              <span>MARCA: ---</span>
             </Typography>
             <Typography>
-              <span>GÉNERO: Hombre</span>
+              <span>GÉNERO: Unisex</span>
             </Typography>
           </Box>
           <Box
