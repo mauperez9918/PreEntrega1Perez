@@ -3,17 +3,16 @@ import {
   Typography,
   Toolbar,
   AppBar,
-  Tooltip,
-  IconButton,
   Menu,
   MenuItem,
   Button,
 } from "@mui/material";
 import { CartWidget } from "../../common/CartWidget/CartWidget";
 import { useState } from "react";
+import { Link, Outlet } from "react-router-dom";
 
 const navItems = ["Inicio", "Categorias"];
-const categorias = ["Gorras", "Pantalones", "Buzos", "Camperas"];
+const categories = ["Gorras", "Pantalones", "Buzos", "Camperas"];
 
 const Navbar = () => {
   const [anchorElUser, setAnchorElUser] = useState(null);
@@ -39,7 +38,9 @@ const Navbar = () => {
               Sports Essentials
             </Typography>
             <Box sx={{ flexGrow: 0 }}>
-              <Button sx={{ my: 2, color: "white" }}>Inicio</Button>
+              <Link to="/">
+                <Button sx={{ my: 2, color: "white" }}>Inicio</Button>
+              </Link>
               <Button
                 sx={{ my: 2, color: "white" }}
                 onClick={handleOpenUserMenu}
@@ -62,10 +63,16 @@ const Navbar = () => {
                 open={Boolean(anchorElUser)}
                 onClose={handleCloseUserMenu}
               >
-                {categorias.map((categoria) => (
-                  <MenuItem key={categoria} onClick={handleCloseUserMenu}>
-                    <Typography textAlign="center">{categoria}</Typography>
-                  </MenuItem>
+                {categories.map((category) => (
+                  <Link
+                    key={category}
+                    style={{ textDecoration: "none", color: "black" }}
+                    to={`/category/${category}`}
+                  >
+                    <MenuItem onClick={handleCloseUserMenu}>
+                      <Typography textAlign="center">{category}</Typography>
+                    </MenuItem>
+                  </Link>
                 ))}
               </Menu>
             </Box>
@@ -76,6 +83,7 @@ const Navbar = () => {
           <Toolbar />
         </Box>
       </Box>
+      <Outlet />
     </>
   );
 };
