@@ -13,7 +13,7 @@ const ItemListContainer = () => {
       .then((res) => res.json())
       .then((products) => {
         filterByCategory = products.filter(
-          (product) => product.categoria == categoryName
+          (product) => product.category == categoryName
         );
         categoryName ? setProducts(filterByCategory) : setProducts(products);
       });

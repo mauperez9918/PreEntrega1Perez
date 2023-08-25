@@ -1,7 +1,7 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
 import "./ItemDetail.css";
 
-const ItemDetail = ({ product }) => {
+const ItemDetail = ({ product, agregarProducto }) => {
   return (
     <Grid
       container
@@ -27,7 +27,7 @@ const ItemDetail = ({ product }) => {
           <Box sx={{ width: "500px" }}>
             <img
               className="productoimg"
-              src={product.imagen}
+              src={product.image}
               alt="Imagen Del Producto"
             ></img>
           </Box>
@@ -43,18 +43,18 @@ const ItemDetail = ({ product }) => {
         >
           <Box>
             <Typography sx={{ fontSize: "28px" }}>
-              <span>{product.nombre}</span>
+              <span>{product.name}</span>
             </Typography>
             <Typography sx={{ fontWeightl: "light", fontSize: "22px", mt: 4 }}>
-              <span>${product.precio}</span>
+              <span>${product.price}</span>
             </Typography>
           </Box>
           <Box sx={{ display: "flex", flexDirection: "column" }}>
             <Typography>
-              <span>MARCA: ---</span>
+              <span>{product.brand}</span>
             </Typography>
             <Typography>
-              <span>GÉNERO: Unisex</span>
+              <span>{product.gender}</span>
             </Typography>
           </Box>
           <Box
@@ -65,8 +65,12 @@ const ItemDetail = ({ product }) => {
               justifyContent: "center",
             }}
           >
-            <Button variant="contained" sx={{ width: "50%", fontSize: "18px" }}>
-              Comprar
+            <Button
+              onClick={() => agregarProducto(product)}
+              variant="contained"
+              sx={{ width: "50%", fontSize: "18px" }}
+            >
+              Agregar Al Carrito
             </Button>
           </Box>
         </Grid>
