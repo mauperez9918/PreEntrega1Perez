@@ -1,11 +1,11 @@
 import { Grid, Typography } from "@mui/material";
 import ProductCard from "../../common/ProductCard/ProductCard";
 
-const ItemList = ({ products }) => {
+const ItemList = ({ products, category }) => {
   return (
     <div>
       <Typography variant="h1" sx={{ textAlign: "center", fontSize: "60px" }}>
-        Productos
+        {category ? category : "Products"}
       </Typography>
       <Grid container spacing={4} sx={{ p: 2 }}>
         {products.map((product) => (

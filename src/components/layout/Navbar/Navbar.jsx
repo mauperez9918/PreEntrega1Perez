@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import { CartWidget } from "../../common/CartWidget/CartWidget";
 import { useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const navItems = ["Inicio", "Categorias"];
 const categories = ["Gorras", "Pantalones", "Buzos", "Camperas"];
@@ -85,7 +85,6 @@ const Navbar = () => {
           <Toolbar />
         </Box>
       </Box>
-      <Outlet />
     </>
   );
 };

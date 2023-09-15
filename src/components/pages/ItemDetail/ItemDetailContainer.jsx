@@ -5,7 +5,8 @@ import { CartContext } from "../../../contexts/CartContext";
 
 const ItemDetailContainer = () => {
   const [product, setProduct] = useState({});
-
+  const [cartStock, setCartStock] = useState({});
+  const { addToCart, carritoStorage } = useContext(CartContext);
   const { id } = useParams();
 
   useEffect(() => {
@@ -17,9 +18,24 @@ const ItemDetailContainer = () => {
       });
   }, [id]);
 
-  const { agregarProducto } = useContext(CartContext);
+  useEffect(() => {
+    let findProduct = carritoStorage.find((item) => item.id == product.id);
+    if (findProduct) {
+      setCartStock(findProduct);
+    }
+  }, [carritoStorage, product]);
 
-  return <ItemDetail product={product} agregarProducto={agregarProducto} />;
+  const addProduct = (quantity) => {
+    let data = { ...product, quantity: quantity };
+    addToCart(data);
+  };
+  return (
+    <ItemDetail
+      product={product}
+      addProduct={addProduct}
+      cartStock={cartStock}
+    />
+  );
 };
 
 export default ItemDetailContainer;

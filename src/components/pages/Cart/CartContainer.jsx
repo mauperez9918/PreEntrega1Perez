@@ -3,9 +3,11 @@ import Cart from "./Cart";
 import { CartContext } from "../../../contexts/CartContext";
 
 const CartContainer = () => {
-  const { carritoStorage } = useContext(CartContext);
+  const { carritoStorage, totalPrice } = useContext(CartContext);
 
-  return <Cart carritoStorage={carritoStorage} />;
+  let total = totalPrice();
+
+  return <Cart carritoStorage={carritoStorage} totalPrice={total} />;
 };
 
 export default CartContainer;

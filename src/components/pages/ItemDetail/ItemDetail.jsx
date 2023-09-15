@@ -1,7 +1,8 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
 import "./ItemDetail.css";
+import ItemCountContainer from "../../common/ItemCount/ItemCountContainer";
 
-const ItemDetail = ({ product, agregarProducto }) => {
+const ItemDetail = ({ product, addProduct, cartStock }) => {
   return (
     <Grid
       container
@@ -51,10 +52,13 @@ const ItemDetail = ({ product, agregarProducto }) => {
           </Box>
           <Box sx={{ display: "flex", flexDirection: "column" }}>
             <Typography>
-              <span>{product.brand}</span>
+              <span>Marca: {product.brand}</span>
             </Typography>
             <Typography>
-              <span>{product.gender}</span>
+              <span>Genero: {product.gender}</span>
+            </Typography>
+            <Typography>
+              <span>Stock: {product.stock}</span>
             </Typography>
           </Box>
           <Box
@@ -65,13 +69,11 @@ const ItemDetail = ({ product, agregarProducto }) => {
               justifyContent: "center",
             }}
           >
-            <Button
-              onClick={() => agregarProducto(product)}
-              variant="contained"
-              sx={{ width: "50%", fontSize: "18px" }}
-            >
-              Agregar Al Carrito
-            </Button>
+            <ItemCountContainer
+              stock={product.stock}
+              addProduct={addProduct}
+              cartStock={cartStock}
+            />
           </Box>
         </Grid>
       </Grid>
