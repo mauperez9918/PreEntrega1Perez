@@ -1,4 +1,4 @@
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import "./ItemDetail.css";
 import ItemCountContainer from "../../common/ItemCount/ItemCountContainer";
 
