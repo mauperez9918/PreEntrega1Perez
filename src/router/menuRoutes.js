@@ -1,7 +1,7 @@
 import CartContainer from "../components/pages/Cart/CartContainer";
-import CheckOut from "../components/pages/Checkout/CheckOut";
 import ItemDetailContainer from "../components/pages/ItemDetail/ItemDetailContainer";
 import ItemListContainer from "../components/pages/ItemList/ItemListContainer";
+import CheckOut from "../components/pages/CheckOut/CheckOut";
 
 export const menuRoutes = [
   {
