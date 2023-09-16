@@ -1,7 +1,8 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
 import ProductCart from "../../common/productCart/ProductCart";
+import { Link } from "react-router-dom";
 
-const Cart = ({ carritoStorage, totalPrice }) => {
+const Cart = ({ carritoStorage, totalPrice, subtotal, costeDeEnvio }) => {
   return (
     <>
       <Typography
@@ -12,10 +13,11 @@ const Cart = ({ carritoStorage, totalPrice }) => {
       <Grid
         container
         sx={{
-          width: "100%",
+          width: "90%",
           height: "100%",
           display: "flex",
           justifyContent: "center",
+          margin: "20px",
         }}
       >
         <Grid
@@ -39,7 +41,7 @@ const Cart = ({ carritoStorage, totalPrice }) => {
           container
           sx={{
             boxShadow: "3",
-            width: "15%",
+            width: "18%",
             height: "700px",
             display: "flex",
             flexDirection: "column",
@@ -61,18 +63,26 @@ const Cart = ({ carritoStorage, totalPrice }) => {
             >
               <Box>
                 <Typography>Coste de envio</Typography>
+                <Typography>SubTotal</Typography>
                 <Typography>Total</Typography>
               </Box>
               <Box>
-                <Typography>15 USD</Typography>
-                <Typography>{totalPrice}</Typography>
+                <Typography>$ {costeDeEnvio}</Typography>
+                <Typography>$ {subtotal}</Typography>
+                <Typography>$ {totalPrice}</Typography>
               </Box>
             </Box>
           </Box>
           <Box>
-            <Button variant="contained" sx={{ width: "220px", height: "45px" }}>
-              Realizar Compra
-            </Button>
+            <Link to="/checkout">
+              <Button
+                disabled={carritoStorage.length == 0}
+                variant="contained"
+                sx={{ width: "220px", height: "45px" }}
+              >
+                Realizar Compra
+              </Button>
+            </Link>
           </Box>
         </Grid>
       </Grid>

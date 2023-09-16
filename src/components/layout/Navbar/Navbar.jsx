@@ -68,7 +68,11 @@ const Navbar = () => {
                 {categories.map((category) => (
                   <Link
                     key={category}
-                    style={{ textDecoration: "none", color: "black" }}
+                    style={{
+                      textDecoration: "none",
+                      color: "black",
+                      height: "30px",
+                    }}
                     to={`/category/${category}`}
                   >
                     <MenuItem onClick={handleCloseUserMenu}>

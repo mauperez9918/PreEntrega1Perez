@@ -6,12 +6,12 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyC24GlbTIwXm5E86AuYUSjePmqnODD9IOE",
-  authDomain: "sport-essentials.firebaseapp.com",
-  projectId: "sport-essentials",
-  storageBucket: "sport-essentials.appspot.com",
-  messagingSenderId: "988988538586",
-  appId: "1:988988538586:web:585ce4441163d3b71defe3",
+  apiKey: import.meta.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGE_SENDER_ID,
+  appId: import.meta.env.VITE_APP_ID,
 };
 
 // Initialize Firebase

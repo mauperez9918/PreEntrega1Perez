@@ -11,6 +11,7 @@ const ItemDetail = ({ product, addProduct, cartStock }) => {
         height: "100%",
         display: "flex",
         justifyContent: "center",
+        minHeight: "900px",
       }}
     >
       <Grid
@@ -18,14 +19,15 @@ const ItemDetail = ({ product, addProduct, cartStock }) => {
         sx={{
           m: 10,
           boxShadow: 3,
-          maxWidth: "60%",
+          maxWidth: "900px",
+          height: "500px",
           display: "flex",
           borderRadius: "5px",
-          p: 6,
+          p: 3,
         }}
       >
         <Grid item xd={6}>
-          <Box sx={{ width: "500px" }}>
+          <Box>
             <img
               className="productoimg"
               src={product.image}
@@ -33,37 +35,44 @@ const ItemDetail = ({ product, addProduct, cartStock }) => {
             ></img>
           </Box>
         </Grid>
+
         <Grid
           item
-          xs={6}
+          xs={4}
           sx={{
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
           }}
         >
-          <Box>
-            <Typography sx={{ fontSize: "28px" }}>
+          <Box sx={{ width: "350px" }}>
+            <Typography
+              variant="h1"
+              sx={{ fontSize: "28px", fontWeight: "bold" }}
+            >
               <span>{product.name}</span>
             </Typography>
-            <Typography sx={{ fontWeightl: "light", fontSize: "22px", mt: 4 }}>
+
+            <Box sx={{ display: "flex", flexDirection: "column", mt: "10px" }}>
+              <Typography>
+                <span>Marca: {product.brand}</span>
+              </Typography>
+              <Typography>
+                <span>Genero: {product.gender}</span>
+              </Typography>
+              <Typography>
+                <span>Stock: {product.stock}</span>
+              </Typography>
+            </Box>
+
+            <Typography variant="h3" sx={{ mt: "10px", fontSize: "24px" }}>
               <span>${product.price}</span>
             </Typography>
           </Box>
-          <Box sx={{ display: "flex", flexDirection: "column" }}>
-            <Typography>
-              <span>Marca: {product.brand}</span>
-            </Typography>
-            <Typography>
-              <span>Genero: {product.gender}</span>
-            </Typography>
-            <Typography>
-              <span>Stock: {product.stock}</span>
-            </Typography>
-          </Box>
+
           <Box
             sx={{
-              width: "100%",
+              width: "350px",
               height: 60,
               display: "flex",
               justifyContent: "center",

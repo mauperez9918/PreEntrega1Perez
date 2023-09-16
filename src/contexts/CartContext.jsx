@@ -5,13 +5,15 @@ export const CartContext = createContext();
 const CartContextComponent = ({ children }) => {
   const [carritoStorage, setCarritoStorage] = useState([]);
 
-  const totalPrice = () => {
-    let costeDeEnvio = 15;
+  const clearCart = () => {
+    setCarritoStorage([]);
+  };
 
+  const totalPrice = () => {
     let total = carritoStorage.reduce((accumulator, product) => {
-      return accumulator + product.price;
+      return accumulator + product.price * product.quantity;
     }, 0);
-    console.log(total);
+
     return total;
   };
 
@@ -76,6 +78,7 @@ const CartContextComponent = ({ children }) => {
     increaseQuantity,
     decreaseQuantity,
     totalPrice,
+    clearCart,
   };
   return <CartContext.Provider value={data}>{children}</CartContext.Provider>;
 };

@@ -1,22 +1,34 @@
 import { useEffect, useState } from "react";
 import ItemList from "./ItemList.jsx";
 import { useParams } from "react-router-dom";
+import { db } from "../../../../firebaseConfig.js";
+import { collection, getDocs, query, where } from "firebase/firestore";
 
 const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
 
   const { categoryName } = useParams();
-  let filterByCategory = "";
 
   useEffect(() => {
-    fetch("https://mauperez9918.github.io/PreEntrega2Perez/products.json")
-      .then((res) => res.json())
-      .then((products) => {
-        filterByCategory = products.filter(
-          (product) => product.category == categoryName
+    const itemCollection = collection(db, "products");
+
+    if (categoryName) {
+      const q = query(
+        collection(db, "products"),
+        where("category", "==", categoryName)
+      );
+      getDocs(q).then((snapshot) => {
+        setProducts(
+          snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }))
         );
-        categoryName ? setProducts(filterByCategory) : setProducts(products);
       });
+    } else {
+      getDocs(itemCollection).then((snapshot) => {
+        setProducts(
+          snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }))
+        );
+      });
+    }
   }, [categoryName]);
 
   return <ItemList products={products} category={categoryName} />;
