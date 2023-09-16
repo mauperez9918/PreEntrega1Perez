@@ -13,20 +13,28 @@ const Footer = () => {
           width: "100%",
           maxHeight: "100px",
           display: "flex",
-          justifyContent: "space-between",
+          justifyContent: "space-evenly",
           alignItems: "center",
-          padding: "50px",
+          mt: "20px",
+          padding: "30px",
         }}
       >
-        <Typography style={{ color: "white" }}>
+        <Typography style={{ color: "white", width: "32%" }}>
           &copy; 2023 SportEssentials. Todos los derechos reservados.
         </Typography>
 
-        <Typography style={{ color: "white", fontSize: "30px" }}>
+        <Typography
+          style={{
+            color: "white",
+            fontSize: "30px",
+            width: "32%",
+            textAlign: "center",
+          }}
+        >
           SportEssentials
         </Typography>
 
-        <Box>
+        <Box sx={{ width: "32%", textAlign: "right" }}>
           <a href="https://www.instagram.com/" className="iconos-redes">
             <InstagramIcon style={{ color: "white", fontSize: "40px" }} />
           </a>
