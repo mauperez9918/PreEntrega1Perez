@@ -1,8 +1,15 @@
-# React + Vite
+SportEssentials Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+-Mi proyecto SportEssentials en es un e-commerce de ropa deportiva. Complemente la app con Material UI, Formik y Yup para realizar la validacion de formularios. Ademas de utilizar Sweetalert2 para colocar una alerta que devuelva el id de orden de compra al pasar por el checkout.
 
-Currently, two official plugins are available:
+-React
+-Material UI
+-Formik
+-Yup
+-Sweetalert2
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Installation
+
+-npm install -to install all dependencies
+
+-npm run dev -to run the project
