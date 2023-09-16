@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import "./Footer.css";
+import "./footer.css";
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
         sx={{
           backgroundColor: "black",
           width: "100%",
-          height: "100px",
+          maxHeight: "100px",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",

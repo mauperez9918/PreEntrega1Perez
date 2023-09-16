@@ -7,11 +7,10 @@ import {
   MenuItem,
   Button,
 } from "@mui/material";
-import { CartWidget } from "../../common/CartWidget/CartWidget";
+import { CartWidget } from "../../common/cartWidget/CartWidget";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const navItems = ["Inicio", "Categorias"];
 const categories = ["Gorras", "Pantalones", "Buzos", "Camperas"];
 
 const Navbar = () => {

@@ -1,6 +1,6 @@
 import { Box, Grid, Typography } from "@mui/material";
 import "./ItemDetail.css";
-import ItemCountContainer from "../../common/ItemCount/ItemCountContainer";
+import ItemCountContainer from "../../common/itemCount/ItemCountContainer";
 
 const ItemDetail = ({ product, addProduct, cartStock }) => {
   return (

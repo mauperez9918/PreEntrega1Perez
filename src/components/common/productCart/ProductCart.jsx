@@ -1,5 +1,5 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
-import "./ProductCart.css";
+import "./productCart.css";
 import { useContext } from "react";
 import { CartContext } from "../../../contexts/CartContext";
 import DeleteIcon from "@mui/icons-material/Delete";

@@ -1,5 +1,5 @@
 import { Box, Grid, Typography } from "@mui/material";
-import ProductCard from "../../common/ProductCard/ProductCard";
+import ProductCard from "../../common/productCard/ProductCard";
 
 const ItemList = ({ products, category }) => {
   return (

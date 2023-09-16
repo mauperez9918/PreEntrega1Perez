@@ -57,11 +57,8 @@ const CartContextComponent = ({ children }) => {
 
     if (productIndex !== -1) {
       let refCarritoStorage = [...carritoStorage];
-      const inCartProductQuantity = refCarritoStorage[productIndex].quantity;
 
-      if (inCartProductQuantity + product.quantity > product.stock) {
-        console.log("No hay suficiente stock");
-      } else if (refCarritoStorage[productIndex].quantity < product.stock) {
+      if (refCarritoStorage[productIndex].quantity < product.stock) {
         refCarritoStorage[productIndex].quantity += product.quantity;
 
         setCarritoStorage(refCarritoStorage);
