@@ -7,7 +7,7 @@ import {
   MenuItem,
   Button,
 } from "@mui/material";
-import { CartWidget } from "../../common/cartWidget/CartWidget";
+import { CartWidget } from "../../common/CartWidget/CartWidget";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
