@@ -1,5 +1,5 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
-import ProductCart from "../../common/ProductCart/ProductCart";
+import ProductCart from "../../common/productCart/ProductCart";
 import { Link } from "react-router-dom";
 
 const Cart = ({ carritoStorage, totalPrice, subtotal, costeDeEnvio }) => {
